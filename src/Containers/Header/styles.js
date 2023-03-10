@@ -9,6 +9,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
+  box-shadow: 0 0 25px #1a1a1a;
+  transition: background-color 0.2s;
+  position: fixed;
+  z-index: 10001;
+  top: 0;
 `;
 
 export const Img = styled.div`
@@ -60,6 +65,10 @@ export const ButtonLog = styled.button`
   border: none;
   font-size: 0.9rem;
   color: white;
+
+  :hover {
+    opacity: 0.5;
+  }
 `;
 
 export const ButtonJoin = styled.button`

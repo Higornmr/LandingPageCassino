@@ -9,6 +9,9 @@ export const Icon = styled.div`
     color: white;
     font-size: 2rem;
   }
+  :hover {
+    opacity: 0.5;
+  }
 `;
 export const P = styled.p`
   color: gray;

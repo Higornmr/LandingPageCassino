@@ -3,13 +3,21 @@ import { IconContext } from "react-icons";
 import { CardCarousel } from "../../Components/CardCarousel";
 
 import { BsFillBookmarkStarFill } from "react-icons/bs";
-import { MdCasino } from "react-icons/md";
+import { MdCasino, MdSportsHandball } from "react-icons/md";
+
+import { P, Icon, Separation } from "./styles";
 import {
   GiCardJoker,
   GiVrHeadset,
   GiMedal,
   GiRoundStar,
   GiBackwardTime,
+  GiSoccerBall,
+  GiBasketballBall,
+  GiTennisBall,
+  GiVolleyballBall,
+  GiBoxingGlove,
+  GiEightBall,
 } from "react-icons/gi";
 import {
   IoRadioSharp,
@@ -18,8 +26,6 @@ import {
   IoTvSharp,
   IoTrophySharp,
 } from "react-icons/io5";
-
-import { P, Icon, Separation } from "./styles";
 
 export function CardMenu() {
   return (
@@ -181,6 +187,99 @@ export function CardMenu() {
       </CardCarousel>
 
       <Separation />
+
+      {/* ----------- */}
+      <CardCarousel>
+        <Icon>
+          <IconContext.Provider
+            value={{
+              className: "icon",
+            }}
+          >
+            <GiSoccerBall />
+          </IconContext.Provider>
+        </Icon>
+        <P>Soccer</P>
+      </CardCarousel>
+      {/* ----------- */}
+      <CardCarousel>
+        <Icon>
+          <IconContext.Provider
+            value={{
+              className: "icon",
+            }}
+          >
+            <MdSportsHandball />
+          </IconContext.Provider>
+        </Icon>
+        <P>Handball</P>
+      </CardCarousel>
+      {/* ----------- */}
+      <CardCarousel>
+        <Icon>
+          <IconContext.Provider
+            value={{
+              className: "icon",
+            }}
+          >
+            <GiBasketballBall />
+          </IconContext.Provider>
+        </Icon>
+        <P>Basketball</P>
+      </CardCarousel>
+      {/* ----------- */}
+      <CardCarousel>
+        <Icon>
+          <IconContext.Provider
+            value={{
+              className: "icon",
+            }}
+          >
+            <GiTennisBall />
+          </IconContext.Provider>
+        </Icon>
+        <P>Tennis</P>
+      </CardCarousel>
+      {/* ----------- */}
+      <CardCarousel>
+        <Icon>
+          <IconContext.Provider
+            value={{
+              className: "icon",
+            }}
+          >
+            <GiVolleyballBall />
+          </IconContext.Provider>
+        </Icon>
+        <P>Volleybball</P>
+      </CardCarousel>
+      {/* ----------- */}
+      <CardCarousel>
+        <Icon>
+          <IconContext.Provider
+            value={{
+              className: "icon",
+            }}
+          >
+            <GiBoxingGlove />
+          </IconContext.Provider>
+        </Icon>
+        <P>Boxing / UFC</P>
+      </CardCarousel>
+      {/* ----------- */}
+      <CardCarousel>
+        <Icon>
+          <IconContext.Provider
+            value={{
+              className: "icon",
+            }}
+          >
+            <GiEightBall />
+          </IconContext.Provider>
+        </Icon>
+        <P>Snooker</P>
+      </CardCarousel>
+      {/* ----------- */}
     </>
   );
 }
